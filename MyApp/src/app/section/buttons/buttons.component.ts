@@ -3,8 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-buttons',
   templateUrl: './buttons.component.html',
-  styleUrls: ['./buttons.component.scss']
+  styleUrls: ['./buttons.component.scss'],
 })
 export class ButtonsComponent {
+  constructor() {}
 
+  buttonHandler($event: MouseEvent): void {
+    console.log($event);
+  }
 }
